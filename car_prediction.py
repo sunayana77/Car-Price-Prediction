@@ -4,14 +4,6 @@ import numpy as np
 import pickle
 st.title('Car Price Prediction')
 
-# Present_Price	float
-# Kms_Driven float
-# 	Owner int
-#  	no_year	int
-# Fuel_Type_Diesel bool	
-# Fuel_Type_Petrol bool
-# 	Seller_Type_Individual	bool
-# Transmission_Manual bool
 
 present_price = st.number_input("Present price NPR")
 kms_driven = st.number_input("Total km driven")
@@ -22,15 +14,6 @@ seller_type = st.selectbox("Select Seller type",("Dealer","Individual"))
 transmission = st.selectbox("Select Transmission",("Manual","Automatic"))
 
 converted_price = present_price/100000
-# if fuel_type == "Petrol":
-#     fuel_type_petrol = True
-#     fuel_type_diesel = False
-# elif fuel_type == "Diesel":
-#     fuel_type_petrol = False
-#     fuel_type_diesel = True
-# else:
-#     fuel_type_petrol = False
-#     fuel_type_diesel = False
 
 fuel_type_petrol = False
 fuel_type_diesel = False

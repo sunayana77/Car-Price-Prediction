@@ -50,6 +50,3 @@ if st.button("Car Price"):
 
     st.write(f'The predicted price of the car is: {prediction[0]*100000:.2f} ')
 
-# model should only be loaded once,-1
-# data sent to model is invalid 
-# model predicts every time there is change in the app and not when the button is pressed
